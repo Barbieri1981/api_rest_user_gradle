@@ -21,7 +21,7 @@ public class UserHandler {
     }
 
     @ExceptionHandler(UserException.class)
-    public ResponseEntity<ErrorRsDTO> handleInvalidEmailException(final UserException e, final WebRequest request) {
+    public ResponseEntity<ErrorRsDTO> handleUserExcpetion(final UserException e, final WebRequest request) {
         return new ResponseEntity<>(createError(e, e.getError()), HttpStatus.BAD_REQUEST);
     }
 

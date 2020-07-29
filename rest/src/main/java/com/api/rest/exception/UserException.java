@@ -8,8 +8,6 @@ public class UserException extends RuntimeException {
     protected final ErrorType error;
     protected final int httpStatus;
 
-
-
     public UserException(final String message, final ErrorType error, final int httpStatus) {
         super(message);
         this.error = error;
